@@ -1,3 +1,10 @@
+This is a full stack web application done using angular,java and oracle database.
+
+In this project we can register for different colleges for admissions in only 1 website, but for time-being i have only added 1 university for registering.
+Where frontend part was done in angular and i have added different modules and forms, and the backend part was done in eclipse and connected it to the oracle database using hibernate. We can register for the university using a form, all the details will be stored in the database and college administration would connect with the people using those details which are stored.
+
+
+
 # ImageUpload
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
