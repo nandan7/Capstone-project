@@ -1,0 +1,14 @@
+
+.navbar {
+  font-size: large;
+  background-color: orangered;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  color:rgb(9, 9, 167);
+}

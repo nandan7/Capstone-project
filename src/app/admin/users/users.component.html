@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage"><img src="https://www.kluniversity.in/img/logo9.png" height=30></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="banner text-center">
+    <h1 style="font-size: 60px;">KL University</h1> 
+<button class="button" (click)="addUser()" style="font-weight: 800;color: rgb(238, 238, 238);">Register</button>
+<br>
+  <div>
+    <app-adduser *ngIf=" action==='add'" [user]=" selectedUser" (userAddedEvent)="refreshData()"></app-adduser>
+  </div>
+
+</div>
+  
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About KLU</h2><br>
+           <h4>The Koneru Lakshmaiah Charities was established as a trust in the year 1980 with its official address at Museum road, Governorpet, Vijayawada, Andhra Pradesh 520 002 and started KL College of Engineering in the Academic year 1980-81.
+
+            KL Deemed to be University was established in 1980-81, as KL College of Engineering, which was upgraded to KL College of Engineering Autonomous in 2006 by UGC, and was declared as a Deemed to be University in 2009 by UGC, MHRD Govt.of India. In 2012 as a Deemed to be University the institution was accredited by NAAC with A Grade and later in 2018, was re-accredited by NAAC with A++ grade. In 2019 UGC, MHRD declared this institution as Category I Institution.</h4><br>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://www.kluniversity.in/img/aboutus.jpg" height=250 style="margin-top: 100px;">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img style="margin-top:70px" src="https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/201911/770Pix_433Pix-VIJ-1_0-x433.png?bmlGH5BIE0GvNEOqcSYlbQS.6Upgd.Mt" height=200>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> To impart quality higher education and to undertake research and extension with emphasis on application and innovation that cater to the emerging societal needs through all-round development of the students of all sections enabling them to be globally competitive and socially responsible citizens with intrinsic values.</h4><br>
+      <h4><strong>VISION:</strong> To be a globally renowned university.</h4>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+   <h4> Academics	</h4><br>
+   <p>
+<li>To offer academic flexibility by means of Choice based credit systems and the like.</li>
+<li>To identify and introduce new specializations and offer programs in emerging areas therein</li>
+<li>To incorporate into the curriculum the Application orientation and use high standards of competence for academic delivery</li>
+<li>To design and implement educational system adhering to outcome based International models.</li>
+<li>To introduce and implement innovation in teaching  and learning process to strengthen academic delivery</li>
+<li>To offer academic programs at UG, PG, doctoral, Post-Doctoral which are industry focused, and incorporates Trans-discipline, inter-discipline aspects of the education system</li>
+<li>To deliver higher education that includes technologies and meeting the global requirements</li>
+  </p>
+</div>
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-7">
+      <p style="font-size: 18px; font-weight: 600;">Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Vijayawada, AP</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 123456789</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> support@klu.com</p>
+    </div>
+  </div>
+</div>
+
+</body>
